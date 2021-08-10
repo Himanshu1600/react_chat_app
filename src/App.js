@@ -14,7 +14,7 @@ function App() {
         userName={localStorage.getItem("username")}
         userSecret={localStorage.getItem("password")}
         renderChatFeed={(chatAppProps) => <ChatFeed {...chatAppProps} />}
-        onNewMessage={() => new Audio("./sentsound.mp3").play()}
+        onNewMessage={() => new Audio("./notification.mp3").play()}
       />
     </>
   );
